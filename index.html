@@ -8,11 +8,12 @@
     <style>
 
         body{
-            background-image: linear-gradient(to bottom,white,red);
+            background: linear-gradient(
+297deg,#1a8c9b,#d0dbd9 44%,#0ca7ac);
         }
 
         #navbar-main{
-            background-color: orange;
+            background-color: rgb(255, 155, 5);
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -21,7 +22,7 @@
         }
 
         #navbar-last{
-            background-color: orange;
+            background-color: rgb(255, 155, 5);
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -36,7 +37,7 @@
 
         .page-headings{
             text-align: center;
-            font-family:'Times New Roman', Times, serif
+            font-family:'Times New Roman', Times, serif;
         }
 
         .food-cards{
@@ -47,21 +48,38 @@
         }
 
         .food-card-ind{
-            background-color: orange;
+            background-color: rgb(255, 155, 5);
             margin-right: 5%;
+            margin-top: 5%;
             width: 220px;
-            box-shadow: 2px 2px grey;
+            box-shadow: 2px 2px rgb(151, 146, 146);
         }
-
         .image-styler{
             width: 200px;
             height: 200px;
             margin:5%;
         }
+        
+        .image-styler:hover{
+            width: 210px;
+            height: 210px;
+            margin:3%;
+        }
 
         .food-card-text{
+            background:transparent;
+            border: 0px;
+            margin-left: 22%;
+            margin-right: 22%;
             text-align: center;
             font-size: 25px;
+            margin-bottom: 5%;
+        }
+        .food-card-text:hover{
+           background-color: rgb(35, 207, 207);
+           border-radius: 2em;
+           margin-left: 22%;
+           margin-right: 22%;
         }
         .footer{
             background-color: rosybrown;
@@ -72,46 +90,46 @@
     <nav id="navbar-main">
         <img src="logo.jpg" style="width: 5%; margin:1%; border-radius: 20%; box-shadow: 1px 1px black; " />
         <ul class="navbar-ul" style="list-style: none;">
-            <li style="margin-right: 25px;">
+            <li style="margin-left:15%; margin-top:10%" >
                 <a >
-                    <p style="font-size: 25px; color: black;">Home</p>
+                    <button style="font-size: 25px; color: black; background: transparent; border: 0px;">Home</button>
                 </a>
             </li>
-            <li style="margin-right: 25px;">
+            <li style="margin-left:15%; margin-top:10%"  >
                 <a >
-                    <p style="font-size: 25px; color: black;">Food</p>
+                    <button style="font-size: 25px; color: black; background: transparent; border: 0px;">Food</button>
                 </a>
             </li>
-            <li style="margin-right: 25px;">
+            <li style="margin-left:15%; margin-top:10%"  >
                 <a >
-                    <p style="font-size: 25px; color: black;">About Foodie</p>
+                    <button style="font-size: 25px; color: black; background: transparent; border: 0px;">About</button>
                 </a>
             </li>
         </ul>
 
-        <form style="margin-top: 3%;margin-left:50%;">
-            <input type="search" />
-            <button>Search Me</button>
+        <form style="margin-top:3%;margin-left:55%;">
+            <input type="search" style="height: 2em;border-radius: 1em; border: 1px solid rgb(132, 132, 138);" />
+            <button style="height: 2em;background-color: #0ca7ac; border-radius: 8px; border: 1px solid rgb(9, 9, 211);" >Search Me</button>
         </form>
     </nav>
 
     <h1 class="page-headings">Our Favourite Meals</h1>
     <div class="food-cards">
-        <div class="food-card-ind">
+        <div class="food-card-ind" >
             <img src="img1.jfif" class="image-styler" /> 
-            <p class="food-card-text">Cuisine 1</p>         
+            <button class="food-card-text">Cuisine 1</button>         
         </div>
         <div class="food-card-ind">
             <img src="img2.jfif" class="image-styler" />
-            <p class="food-card-text">Cuisine 2</p>
+            <button class="food-card-text">Cuisine 2</button>
         </div>
         <div class="food-card-ind">
             <img src="img3.jfif" class="image-styler" />
-            <p class="food-card-text">Cuisine 3</p>
+            <button class="food-card-text">Cuisine 3</button>
         </div>
         <div class="food-card-ind">
             <img src="img4.jfif" class="image-styler" />
-            <p class="food-card-text">Cuisine 4</p>
+            <button class="food-card-text">Cuisine 4</button>
         </div>
     </div>
     <br />
@@ -140,7 +158,7 @@
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/REWSeJC3V9I" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowfullscreen style="margin-left: 30%; margin-top:5%; margin-bottom: 5%;"></iframe>
     </div>
     <footer>
         <nav id="navbar-last">
